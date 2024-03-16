@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StyleCategoryDef>
+		<defName>HaloRim_CovHereticStyle</defName>
+		<label>Covenant Heretic</label>
+		<iconPath>HaloRim/World/HereticBaseIcon</iconPath>
+		<thingDefStyles>
+			<li>
+				<thingDef>HaloRim_BeamRifle_Covenant</thingDef>
+				<styleDef>HaloRim_BeamRifle_Heretic</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_BruteShot_Covenant</thingDef>
+				<styleDef>HaloRim_BruteShot_Heretic</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_Carbine_Covenant</thingDef>
+				<styleDef>HaloRim_Carbine_Heretic</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_EnergySword_Covenant</thingDef>
+				<styleDef>HaloRim_EnergySword_Heretic</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_FuelRodCannon_Covenant</thingDef>
+				<styleDef>HaloRim_FuelRodCannon_Heretic</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_GravityHammer_Covenant</thingDef>
+				<styleDef>HaloRim_GravityHammer_Heretic</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_Needler_Covenant</thingDef>
+				<styleDef>HaloRim_Needler_Heretic</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_PlasmaPistol_Covenant</thingDef>
+				<styleDef>HaloRim_PlasmaPistol_Heretic</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_PlasmaRifle_Covenant</thingDef>
+				<styleDef>HaloRim_PlasmaRifle_Heretic</styleDef>
+			</li>
+		</thingDefStyles>
+	</StyleCategoryDef>
+
+	<StyleCategoryDef>
+		<defName>HaloRim_CovSwordsStyle</defName>
+		<label>Swords of Sanhelios</label>
+		<iconPath>HaloRim/World/SwordsBaseIcon</iconPath>
+		<thingDefStyles>
+			<li>
+				<thingDef>HaloRim_BeamRifle_Covenant</thingDef>
+				<styleDef>HaloRim_BeamRifle_Swords</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_BruteShot_Covenant</thingDef>
+				<styleDef>HaloRim_BruteShot_Swords</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_Carbine_Covenant</thingDef>
+				<styleDef>HaloRim_Carbine_Swords</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_EnergySword_Covenant</thingDef>
+				<styleDef>HaloRim_EnergySword_Swords</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_FuelRodCannon_Covenant</thingDef>
+				<styleDef>HaloRim_FuelRodCannon_Swords</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_GravityHammer_Covenant</thingDef>
+				<styleDef>HaloRim_GravityHammer_Swords</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_Needler_Covenant</thingDef>
+				<styleDef>HaloRim_Needler_Swords</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_PlasmaPistol_Covenant</thingDef>
+				<styleDef>HaloRim_PlasmaPistol_Swords</styleDef>
+			</li>
+			<li>
+				<thingDef>HaloRim_PlasmaRifle_Covenant</thingDef>
+				<styleDef>HaloRim_PlasmaRifle_Swords</styleDef>
+			</li>
+		</thingDefStyles>
+	</StyleCategoryDef>
+
+</Defs>

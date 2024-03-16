@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="ArmorMachineableBase">
+		<defName>HaloRim_Cov_BruteUndersuit</defName>
+		<label>brute undersuit</label>
+		<techLevel>Spacer</techLevel>
+		<description>Apparel commonly worn by Brutes, under their armour.</description>
+		<graphicData>
+			<texPath>HaloRim/Apparel/BruteUndersuit/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>HaloRim_CovenantArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>HaloRim_WorkbenchCov</li>
+            </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Cloth>60</Cloth>
+		</costList>
+		<statBases>
+			<Mass>4</Mass>
+			<WorkToMake>8000</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<MarketValue>500</MarketValue>
+			<Insulation_Cold>60</Insulation_Cold>
+			<Insulation_Heat>60</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>Apparel</li>
+		</thingCategories>
+		<tradeTags>
+			<li>CovApparel</li>
+		</tradeTags>
+		<apparel>
+			<tags>
+				<li>CovApparel</li>
+				<li>CovBrute</li>
+			</tags>
+			<wornGraphicPath>HaloRim/Apparel/BruteUndersuit/Apparel</wornGraphicPath>
+			<useWornGraphicMask>True</useWornGraphicMask>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="ArmorMachineableBase" Name="CovBruteArmor">
+		<defName>HaloRim_Cov_BruteArmor</defName>
+		<label>brute armor</label>
+		<techLevel>Spacer</techLevel>
+		<description>Armor commonly worn by Brutes.</description>
+		<graphicData>
+			<texPath>HaloRim/Apparel/BruteArmor/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(101, 101, 120)</color>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>HaloRim_CovenantArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>HaloRim_WorkbenchCov</li>
+            </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>2.5</Mass>
+			<WorkToMake>8000</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<tradeTags>
+			<li>CovApparel</li>
+		</tradeTags>
+		<apparel>
+			<wornGraphicPath>HaloRim/Apparel/BruteArmor/Apparel</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+				<li>Feet</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<tags>
+				<li>CovApparel</li>
+				<li>CovBrute</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Single">
+			<color>(101, 101, 120)</color>
+		</colorGenerator>
+	</ThingDef>
+	
+	<ThingDef ParentName="ArmorMachineableBase" Name="CovBrutePauldrons">
+		<defName>HaloRim_Cov_BrutePauldronsMinor</defName>
+		<label>brute minor pauldrons</label>
+		<techLevel>Spacer</techLevel>
+		<description>Pauldrons commonly worn by Brute Minors.</description>
+		<graphicData>
+			<texPath>HaloRim/Apparel/BrutePauldronsMinor/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(101, 101, 120)</color>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>HaloRim_CovenantArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>HaloRim_WorkbenchCov</li>
+            </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+			<Mass>1</Mass>
+			<WorkToMake>3000</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelArmor</li>
+		</thingCategories>
+		<tradeTags>
+			<li>CovApparel</li>
+		</tradeTags>
+		<apparel>
+			<wornGraphicPath>HaloRim/Apparel/BrutePauldronsMinor/Apparel</wornGraphicPath>
+			<layers>
+				<li>ShellExtra</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Hands</li>
+			</bodyPartGroups>
+			<tags>
+				<li>CovApparel</li>
+				<li>CovBrute</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Single">
+			<color>(101, 101, 120)</color>
+		</colorGenerator>
+	</ThingDef>
+	
+	<ThingDef ParentName="CovBrutePauldrons">
+		<defName>HaloRim_Cov_BrutePauldronsMajor</defName>
+		<label>brute major pauldrons</label>
+		<techLevel>Spacer</techLevel>
+		<description>Pauldrons commonly worn by Brute Majors.</description>
+		<graphicData>
+			<texPath>HaloRim/Apparel/BrutePauldronsMajor/Apparel</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<color>(101, 101, 120)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>HaloRim_CovenantArmor</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<wornGraphicPath>HaloRim/Apparel/BrutePauldronsMajor/Apparel</wornGraphicPath>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Single">
+			<color>(101, 101, 120)</color>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="CovBruteSkullcap">
+		<defName>HaloRim_Cov_BruteSkullcap</defName>
+		<label>brute minor skullcap</label>
+		<techLevel>Spacer</techLevel>
+		<description>Skullcap commonly worn by Brute Minors.</description>
+		<graphicData>
+			<texPath>HaloRim/Apparel/BruteSkullcap/Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<color>(101, 101, 120)</color>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>HaloRim_CovenantArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>HaloRim_WorkbenchCov</li>
+            </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<Mass>1.4</Mass>
+			<WorkToMake>4500</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.0</ArmorRating_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>HaloRim/Apparel/BruteSkullcap/Normal</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<tags>
+				<li>CovApparel</li>
+				<li>CovBrute</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Single">
+			<color>(101, 101, 120)</color>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase" Name="CovBruteHelmet">
+		<defName>HaloRim_Cov_BruteHelmetMajor</defName>
+		<label>brute major helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>Helmet commonly worn by Brute Majors.</description>
+		<graphicData>
+			<texPath>HaloRim/Apparel/BruteHelmetMinor/Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<color>(101, 101, 120)</color>
+		</graphicData>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>HaloRim_CovenantArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>HaloRim_WorkbenchCov</li>
+            </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>25</Steel>
+		</costList>
+		<statBases>
+			<Mass>1.4</Mass>
+			<WorkToMake>4500</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<ArmorRating_Sharp>1.26</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.63</ArmorRating_Blunt>
+			<ArmorRating_Heat>1.08</ArmorRating_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<wornGraphicPath>HaloRim/Apparel/BruteHelmetMinor/Normal</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<tags>
+				<li>CovApparel</li>
+				<li>CovBrute</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Single">
+			<color>(101, 101, 120)</color>
+		</colorGenerator>
+	</ThingDef>
+
+	<ThingDef ParentName="CovBruteHelmet">
+		<defName>HaloRim_Cov_BruteHelmetCaptain</defName>
+		<label>brute captain helmet</label>
+		<techLevel>Spacer</techLevel>
+		<description>Helmet commonly worn by Brute Captains.</description>
+		<graphicData>
+			<texPath>HaloRim/Apparel/BruteHelmetMajor/Normal</texPath>
+			<graphicClass>Graphic_Single</graphicClass> 
+			<color>(101, 101, 120)</color>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>HaloRim_CovenantArmor</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<wornGraphicPath>HaloRim/Apparel/BruteHelmetMajor/Normal</wornGraphicPath>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Single">
+			<color>(101, 101, 120)</color>
+		</colorGenerator>
+	</ThingDef>
+
+</Defs>

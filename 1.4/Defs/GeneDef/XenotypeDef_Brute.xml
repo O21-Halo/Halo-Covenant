@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>HaloRim_Brute</defName>
+		<label>brute</label>
+		<description>A large ape like race, prone to aggression and displays of strength.</description>
+		<descriptionShort>A large ape like race, prone to aggression and displays of strength.</descriptionShort>
+		<inheritable>true</inheritable>
+		<nameMaker>HaloRim_NamerPerson_Brute</nameMaker>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<iconPath>HaloRim/XenotypeIcons/Xenotype_Brute</iconPath>
+		<genes>
+			<li>Body_Hulk</li>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>HaloRim_BruteHead</li>
+			<li>Skin_SlateGray</li>
+			<li>Outland_Skin_Cream</li>
+			<li>Outland_Skin_BrownSubtle</li>
+		</genes>
+	</XenotypeDef>
+
+	<GeneDef ParentName="GeneJawBase">
+		<defName>HaloRim_BruteHead</defName>
+		<label>brute head</label>
+		<description>TODO</description>
+		<iconPath>HaloRim/GeneIcons/Gene_BruteHead</iconPath>
+		<forcedHeadTypes>
+			<li>HaloRim_BruteHead</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>8701</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>HaloRim/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>HaloRim/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingStyleDef>
+		<defName>HaloRim_PlasmaPistol_Swords</defName>
+		<graphicData>
+			<texPath>HaloRim/Weapon/SoS_PlasmaPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>HaloRim_PlasmaPistol_Heretic</defName>
+		<graphicData>
+			<texPath>HaloRim/Weapon/Heretic_PlasmaPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingDef ParentName="BaseMakeableGun" Name="CovenantPlasmaPistol">
+		<defName>HaloRim_PlasmaPistol_Covenant</defName>
+		<label>Plasma Pistol</label>
+		<description>The Type-25 Directed Energy Pistol, also known as the Plasma Pistol, is a Covenant infantry firearm commonly wielded by the smaller Covenant member species, such as the Unggoy, Kig-Yar, and the Yanme'e.</description>
+		<graphicData>
+			<texPath>HaloRim/Weapon/Cov_PlasmaPistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.45</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>2.8</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>HaloRim_Bullet_PlasmaPistol</defaultProjectile>
+				<warmupTime>1.3</warmupTime>
+				<range>26</range>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>HaloRim_Covenant_PlasmaPistolSound</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>CovenantWeapon</li>
+			<li>CovenantRanged</li>
+			<li>CovenantPlasmaPistol</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CovenantRanged</li>
+		</tradeTags>
+		<recipeMaker>
+			<researchPrerequisite>HaloRim_CovenantWeapons</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>HaloRim_WorkbenchCov</li>
+            </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>HaloRim_Bullet_PlasmaPistol</defName>
+		<label>plasma pistol shot</label>
+		<graphicData>
+			<texPath>HaloRim/Projectile/PlasmaShotSmallGreen</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>HaloRim_Damage_Plasma</damageDef>
+			<damageAmountBase>6</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<stoppingPower>0.15</stoppingPower>
+			<speed>70</speed>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>30</amount>
+					<armorPenetration>1.0</armorPenetration>
+				</li>
+			</extraDamages>
+		</projectile>
+		<!-- <comps>
+			<li Class="TabulaRasa.CompProperties_Homing">
+				<recalculationInterval>10</recalculationInterval>
+				<chance>0.1</chance>
+			</li>
+		</comps> -->
+	</ThingDef>
+
+</Defs>

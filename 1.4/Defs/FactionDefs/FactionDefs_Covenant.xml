@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>HaloRim_CovenantEmpire</defName>
+		<label>covenant empire</label>
+		<description>The Covenant Empire, also referred to as The Covenant, was a theocratic hegemony made up of multiple alien species that maintained control over a large portion of the Orion Arm in the Milky Way galaxy. The Covenant was a political, military, and religious affiliation, originally a mutual alliance between the San'Shyuum and Sangheili following a brutal conflict between the two warring races. Its expansion to include at least six other races united in the worship of the Forerunners and the Halo Array soon began after the original formation.</description>
+		<pawnSingular>covenant</pawnSingular>
+		<pawnsPlural>covenant</pawnsPlural>
+		<categoryTag>Outlander</categoryTag>
+		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<earliestRaidDays>35</earliestRaidDays>
+		<canMakeRandomly>true</canMakeRandomly>
+		<autoFlee>false</autoFlee>
+		<canSiege>false</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>commander</leaderTitle>
+		<fixedLeaderKinds>
+			<li>HaloRim_CovenantEliteCommander</li>
+		</fixedLeaderKinds>
+		<permanentEnemy>false</permanentEnemy>
+		<permanentEnemyToEveryoneExceptPlayer>true</permanentEnemyToEveryoneExceptPlayer>
+		<fixedName>Covenant Empire</fixedName>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<techLevel>Ultra</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+			<li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,35)</li>
+				<li>(70, 50)</li>
+				<li>(700, 100)</li>
+				<li>(1300, 150)</li>
+				<li>(100000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<li>
+				<!-- Elite Led -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<HaloRim_CovenantGrunt>40</HaloRim_CovenantGrunt>
+					<HaloRim_CovenantHeavyGrunt>2</HaloRim_CovenantHeavyGrunt>
+					<HaloRim_CovenantJackal>10</HaloRim_CovenantJackal>
+					<HaloRim_CovenantEliteMinor>10</HaloRim_CovenantEliteMinor>
+					<HaloRim_CovenantEliteMajor>2</HaloRim_CovenantEliteMajor>
+					<HaloRim_CovenantEliteUltra>1</HaloRim_CovenantEliteUltra>
+				</options>
+			</li>
+			<li>
+				<!-- Brute Led -->
+				<kindDef>Combat</kindDef>
+				<options>
+					<HaloRim_CovenantGrunt>40</HaloRim_CovenantGrunt>
+					<HaloRim_CovenantJackal>10</HaloRim_CovenantJackal>
+					<HaloRim_CovenantBruteMinor>10</HaloRim_CovenantBruteMinor>
+					<HaloRim_CovenantBruteMajor>2</HaloRim_CovenantBruteMajor>
+					<HaloRim_CovenantBruteCaptain>1</HaloRim_CovenantBruteCaptain>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<HaloRim_CovenantGrunt>40</HaloRim_CovenantGrunt>
+					<HaloRim_CovenantJackal>10</HaloRim_CovenantJackal>
+					<HaloRim_CovenantEliteMajor>2</HaloRim_CovenantEliteMajor>
+					<HaloRim_CovenantEliteCommander>1</HaloRim_CovenantEliteCommander>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<HaloRim_CovenantGruntTrader>1</HaloRim_CovenantGruntTrader>
+				</traders>
+				<carriers>
+					<Muffalo>4</Muffalo>
+				</carriers>
+				<guards>
+					<HaloRim_CovenantGrunt>10</HaloRim_CovenantGrunt>
+					<HaloRim_CovenantEliteMajor>2</HaloRim_CovenantEliteMajor>
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<HaloRim_CovenantGrunt>40</HaloRim_CovenantGrunt>
+					<HaloRim_CovenantHeavyGrunt>2</HaloRim_CovenantHeavyGrunt>
+					<HaloRim_CovenantJackal>10</HaloRim_CovenantJackal>
+					<HaloRim_CovenantEliteMinor>10</HaloRim_CovenantEliteMinor>
+					<HaloRim_CovenantEliteMajor>2</HaloRim_CovenantEliteMajor>
+					<HaloRim_CovenantEliteUltra>1</HaloRim_CovenantEliteUltra>
+					<HaloRim_CovenantEliteCommander>1</HaloRim_CovenantEliteCommander>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<factionIconPath>HaloRim/World/CovenantBaseIcon</factionIconPath>
+		<colorSpectrum>
+			<li>RGB(55, 72, 110)</li>
+		</colorSpectrum>
+		<allowedCultures>
+			<li>HaloRim_CultureCovenant</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Archist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+		</requiredMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+		</disallowedPrecepts>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>30</configurationListOrderPriority>
+	</FactionDef>
+
+</Defs>

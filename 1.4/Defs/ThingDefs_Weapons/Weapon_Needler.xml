@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingStyleDef>
+		<defName>HaloRim_Needler_Swords</defName>
+		<graphicData>
+			<texPath>HaloRim/Weapon/SoS_Needler</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>HaloRim_Needler_Heretic</defName>
+		<graphicData>
+			<texPath>HaloRim/Weapon/Heretic_Needler</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingDef ParentName="BaseMakeableGun" Name="CovenantNeedler">
+		<defName>HaloRim_Needler_Covenant</defName>
+		<label>Needler</label>
+		<description>The Type-33 Guided Munitions Launcher, more commonly known as the Needler, is a Covenant anti-infantry weapon. It is used by Sangheili, Unggoy, Skirmishers, Yanme'e, and Kig-Yar.</description>
+		<graphicData>
+			<texPath>HaloRim/Weapon/Cov_Needler</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>HaloRim_CovenantWeapons</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HaloRim_WorkbenchCov</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.55</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+			<PsychicSensitivity>0.15</PsychicSensitivity>
+			<MoveSpeed>0.25</MoveSpeed>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>HaloRim_Bullet_CovenantNeedler</defaultProjectile>
+				<warmupTime>0.3</warmupTime>
+				<range>25</range>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>HaloRim_Covenant_NeedlerSound</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>CovenantWeapon</li>
+			<li>CovenantRanged</li>
+			<li>CovenantNeedler</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CovenantRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>HaloRim_Bullet_CovenantNeedler</defName>
+		<label>needle shard</label>
+		<graphicData>
+			<texPath>HaloRim/Projectile/Needle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>HaloRim_Damage_Needler</damageDef>
+			<damageAmountBase>3</damageAmountBase>
+			<armorPenetrationBase>0.4</armorPenetrationBase>
+			<stoppingPower>0.3</stoppingPower>
+			<speed>20</speed>
+		</projectile>
+		<comps>
+			<li Class="VFECore.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+				<hitSound>HaloRim_Covenant_NeedlerImpact</hitSound>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

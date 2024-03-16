@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>HaloRim_Elite</defName>
+		<label>elite</label>
+		<description>A saurian race known for their honor and prowess as warriors.</description>
+		<descriptionShort>A saurian race known for their honor and prowess as warriors.</descriptionShort>
+		<inheritable>true</inheritable>
+		<nameMaker>HaloRim_NamerPerson_Elite</nameMaker>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<iconPath>HaloRim/XenotypeIcons/Xenotype_Elite</iconPath>
+		<genes>
+			<li>Body_Standard</li>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>HaloRim_EliteHead</li>
+			<li>Skin_SlateGray</li>
+			<li>Skin_InkBlack</li>
+		</genes>
+	</XenotypeDef>
+
+	<GeneDef ParentName="GeneJawBase">
+		<defName>HaloRim_EliteHead</defName>
+		<label>elite head</label>
+		<description>TODO</description>
+		<iconPath>HaloRim/GeneIcons/Gene_EliteHead</iconPath>
+		<forcedHeadTypes>
+			<li>HaloRim_EliteHead</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>8701</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>HaloRim/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>HaloRim/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+</Defs>

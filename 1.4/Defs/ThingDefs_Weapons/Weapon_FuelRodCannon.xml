@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingStyleDef>
+		<defName>HaloRim_FuelRodCannon_Swords</defName>
+		<graphicData>
+			<texPath>HaloRim/Weapon/SoS_FuelRodCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>HaloRim_FuelRodCannon_Heretic</defName>
+		<graphicData>
+			<texPath>HaloRim/Weapon/Heretic_FuelRodCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingDef ParentName="BaseMakeableGun" Name="CovenantFuelRodCannon">
+		<defName>HaloRim_FuelRodCannon_Covenant</defName>
+		<label>Fuel Rod Cannon</label>
+		<description>The Type-33 Light Anti-Armor Weapon, more commonly known as the Fuel Rod Gun or Fuel Rod Cannon, is a Covenant shoulder-fired mortar/radiation weapon.</description>
+		<graphicData>
+			<texPath>HaloRim/Weapon/Cov_FuelRodCannon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>4.5</Mass>
+			<AccuracyTouch>0.30</AccuracyTouch>
+			<AccuracyShort>0.50</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>HaloRim_Bullet_FuelRodCannon</defaultProjectile>
+				<warmupTime>1.3</warmupTime>
+				<range>31</range>
+				<ticksBetweenBurstShots>50</ticksBetweenBurstShots>
+        		<requireLineOfSight>false</requireLineOfSight>
+        		<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
+				<forcedMissRadius>5</forcedMissRadius>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>HaloRim_Covenant_FuelRodCannonSound</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>CovenantWeapon</li>
+			<li>CovenantRanged</li>
+			<li>CovenantFuelRodCannon</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CovenantRanged</li>
+		</tradeTags>
+		<recipeMaker>
+			<researchPrerequisite>HaloRim_CovenantHeavyWeapons</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>HaloRim_WorkbenchCov</li>
+            </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>HaloRim_Bullet_FuelRodCannon</defName>
+		<label>fuel rod shot</label>
+		<graphicData>
+			<texPath>HaloRim/Projectile/FuelRodShot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>HaloRim_Damage_FuelRodCannon</damageDef>
+			<explosionRadius>2</explosionRadius>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.2</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>30</speed>
+			<soundExplode>HaloRim_Covenant_FuelRodCannonImpact</soundExplode>
+		</projectile>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- <TabulaRasa.UpdateDef>
+		<defName>HaloRim_Covenant_RELEASE</defName>
+		<date>2023/09/31</date>
+		<banner>UpdateInfo/O21HaloRim</banner>
+		<contentList>
+			<li>
+				<header></header>
+				<text></text>
+			</li>
+		</contentList>
+		<links>
+			<li>
+				<linkLabel>Steam Workshop</linkLabel>
+				<linkUrl>https://localhost/</linkUrl>
+				<linkTex>TabulaRasa/UI/Steam</linkTex>
+			</li>
+		</links>
+	</TabulaRasa.UpdateDef> -->
+
+</Defs>

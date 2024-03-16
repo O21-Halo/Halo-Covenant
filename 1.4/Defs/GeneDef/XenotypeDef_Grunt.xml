@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>HaloRim_Grunt</defName>
+		<label>grunt</label>
+		<description>A short statured intelligent and cowardly race often seen as outwardly unintelligent due to their hyperactive temperment.</description>
+		<descriptionShort>A short statured intelligent and cowardly race often seen as outwardly unintelligent due to their hyperactive temperment.</descriptionShort>
+		<inheritable>true</inheritable>
+		<nameMaker>HaloRim_NamerPerson_Grunt</nameMaker>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<iconPath>HaloRim/XenotypeIcons/Xenotype_Grunt</iconPath>
+		<genes>
+			<li>Body_Standard</li>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>HaloRim_GruntHead</li>
+			<li>Skin_SlateGray</li>
+			<li>Outland_Skin_BrownFaded</li>
+		</genes>
+	</XenotypeDef>
+
+	<GeneDef ParentName="GeneJawBase">
+		<defName>HaloRim_GruntHead</defName>
+		<label>grunt head</label>
+		<description>TODO</description>
+		<iconPath>HaloRim/GeneIcons/Gene_GruntHead</iconPath>
+		<forcedHeadTypes>
+			<li>HaloRim_GruntHead</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>8701</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>HaloRim/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>HaloRim/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+</Defs>

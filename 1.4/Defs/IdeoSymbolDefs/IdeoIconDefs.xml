@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<IdeoIconDef>
+		<defName>HaloRim_GreatJourney</defName>
+		<iconPath>HaloRim/UI/Cultures/GreatJourney</iconPath>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>HaloRim_UNSCDoctrine</defName>
+		<iconPath>HaloRim/UI/Cultures/UNSCDoctrine</iconPath>
+	</IdeoIconDef>
+
+</Defs>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingStyleDef>
+		<defName>HaloRim_Carbine_Swords</defName>
+		<graphicData>
+			<texPath>HaloRim/Weapon/SoS_Carbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingStyleDef>
+		<defName>HaloRim_Carbine_Heretic</defName>
+		<graphicData>
+			<texPath>HaloRim/Weapon/Heretic_Carbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+
+	<ThingDef ParentName="BaseMakeableGun" Name="CovenantCarbine">
+		<defName>HaloRim_Carbine_Covenant</defName>
+		<label>Covenant Carbine</label>
+		<description>The Type-51 Carbine, also known as the Covenant Carbine, is a Covenant infantry firearm carried commonly by the Jiralhanae, Kig-Yar, and Sangheili.</description>
+		<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
+		<graphicData>
+			<texPath>HaloRim/Weapon/Cov_Carbine</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>2.6</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.72</AccuracyShort>
+			<AccuracyMedium>0.63</AccuracyMedium>
+			<AccuracyLong>0.52</AccuracyLong>
+			<RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>HaloRim_CovenantWeapons</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>HaloRim_WorkbenchCov</li>
+            </recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>120</Steel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		<techLevel>Spacer</techLevel>
+		<weaponTags>
+			<li>CovenantWeapon</li>
+			<li>CovenantRanged</li>
+			<li>CovenantCarbine</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CovenantRanged</li>
+		</tradeTags>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>HaloRim_Bullet_CovenantCarbine</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>31</range>
+				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>HaloRim_Covenant_CarbineSound</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>14</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>1.9</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef Class="VanillaWeaponsExpandedLaser.LaserBeamDef" ParentName="HaloRimLaserBeamBase">
+		<defName>HaloRim_Bullet_CovenantCarbine</defName>
+		<label>carbine beam</label>
+		<graphicData>
+			<texPath>HaloRim/Projectile/CarbineShotNew</texPath>
+		</graphicData>
+		<textures Inherit="False">
+			<li>HaloRim/Projectile/CarbineShotNew</li>
+		</textures>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>HaloRim_Damage_Plasma</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<stoppingPower>0.3</stoppingPower>
+			<speed>105</speed>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>6</amount>
+					<armorPenetration>0.5</armorPenetration>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+
+</Defs>

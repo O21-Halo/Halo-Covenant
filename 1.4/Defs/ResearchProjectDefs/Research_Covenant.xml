@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ResearchProjectDef ParentName="O21HaloResearch">
+		<defName>HaloRim_CovenantArmory</defName>
+		<label>Covenant Armory</label>
+		<description>Unlocks access to the basics of the Covenant and provides a route into further research of their equipment.</description>
+		<baseCost>2000</baseCost>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<researchViewX>4</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="O21HaloResearch">
+		<defName>HaloRim_CovenantConstruction</defName>
+		<label>Covenant Construction</label>
+		<description>Unlocks blueprints for building various Covenant structures and furniture.</description>
+		<baseCost>2500</baseCost>
+		<prerequisites>
+			<li>HaloRim_CovenantArmory</li>
+		</prerequisites>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="O21HaloResearch">
+		<defName>HaloRim_CovenantTurrets</defName>
+		<label>Covenant Turrets</label>
+		<description>Unlocks blueprints for building Covenant turrets.</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>HaloRim_CovenantConstruction</li>
+			<li>HaloRim_CovenantWeapons</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- <ResearchProjectDef ParentName="O21HaloResearch">
+		<defName>HaloRim_CovenantShielding</defName>
+		<label>Covenant Shielding</label>
+		<description>Unlocks blueprints for building Covenant shield generators.</description>
+		<baseCost>6000</baseCost>
+		<prerequisites>
+			<li>HaloRim_CovenantTurrets</li>
+		</prerequisites>
+		<researchViewX>7</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef> -->
+	
+	<ResearchProjectDef ParentName="O21HaloResearch">
+		<defName>HaloRim_CovenantWeapons</defName>
+		<label>Covenant Weapons</label>
+		<description>Unlocks the basic set of Covenant weapons.</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>HaloRim_CovenantArmory</li>
+		</prerequisites>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="O21HaloResearch">
+		<defName>HaloRim_CovenantHeavyWeapons</defName>
+		<label>Covenant Heavy Weapons</label>
+		<description>Unlocks the heavier Covenant weapons.</description>
+		<baseCost>3000</baseCost>
+		<prerequisites>
+			<li>HaloRim_CovenantWeapons</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="O21HaloResearch">
+		<defName>HaloRim_CovenantArmor</defName>
+		<label>Covenant Armor</label>
+		<description>Unlocks basic Covenant armors.</description>
+		<baseCost>1500</baseCost>
+		<prerequisites>
+			<li>HaloRim_CovenantArmory</li>
+		</prerequisites>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<!-- <ResearchProjectDef ParentName="O21HaloResearch">
+		<defName>HaloRim_CovenantAdvancedArmor</defName>
+		<label>Covenant Advanced Armor</label>
+		<description>Unlocks advanced Covenant armors.</description>
+		<baseCost>1500</baseCost>
+		<prerequisites>
+			<li>HaloRim_CovenantArmor</li>
+		</prerequisites>
+		<researchViewX>6</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef> -->
+	
+	<!-- <ResearchProjectDef ParentName="O21HaloResearch">
+		<defName>HaloRim_CovenantExplosives</defName>
+		<label>Covenant Explosives</label>
+		<description>Unlocks grenades and grenade belts used by the Covenant.</description>
+		<baseCost>1000</baseCost>
+		<prerequisites>
+			<li>HaloRim_CovenantWeapons</li>
+		</prerequisites>
+		<researchViewX>7</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef> -->
+
+</Defs>

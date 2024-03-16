@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>HaloRim_JackalHead</defName>
+		<graphicPath>HaloRim/Pawn/Humanlike/Jackal/Normal</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>HaloRim_JackalHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>HaloRim_EliteHead</defName>
+		<graphicPath>HaloRim/Pawn/Humanlike/Elite/Normal</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>HaloRim_EliteHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>HaloRim_BruteHead</defName>
+		<graphicPath>HaloRim/Pawn/Humanlike/Brute/Normal</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>HaloRim_BruteHead</li>
+		</requiredGenes>
+	</HeadTypeDef>
+
+	<HeadTypeDef ParentName="AverageBase">
+		<defName>HaloRim_GruntHead</defName>
+		<graphicPath>HaloRim/Pawn/Humanlike/Grunt/Normal</graphicPath>
+		<gender>None</gender>
+		<requiredGenes>
+			<li>HaloRim_GruntHead</li>
+		</requiredGenes>
+		<modExtensions>
+			<li Class="TabulaRasa.DefModExt_HeadTypeStuff">
+				<useSkinShader>false</useSkinShader>
+				<shaderType>CutoutComplex</shaderType>
+			</li>
+		</modExtensions>
+	</HeadTypeDef>
+
+</Defs>

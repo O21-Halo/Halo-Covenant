@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<XenotypeDef>
+		<defName>HaloRim_Jackal</defName>
+		<label>jackal</label>
+		<description>An avian/reptile race with incredible eyesight and weak bodies.</description>
+		<descriptionShort>An avian/reptile race with incredible eyesight and weak bodies.</descriptionShort>
+		<inheritable>true</inheritable>
+		<!-- <nameMaker>HaloRim_NamerPerson_Jackal</nameMaker>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker> -->
+		<iconPath>HaloRim/XenotypeIcons/Xenotype_Jackal</iconPath>
+		<genes>
+			<li>Body_Thin</li>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>HaloRim_JackalHead</li>
+			<li>Outland_Skin_DirtBrown</li>
+			<li>Outland_Skin_LightBrown</li>
+			<li>Outland_Skin_BrownWood</li>
+		</genes>
+	</XenotypeDef>
+
+	<GeneDef ParentName="GeneJawBase">
+		<defName>HaloRim_JackalHead</defName>
+		<label>jackal head</label>
+		<description>TODO</description>
+		<iconPath>HaloRim/GeneIcons/Gene_JackalHead</iconPath>
+		<forcedHeadTypes>
+			<li>HaloRim_JackalHead</li>
+		</forcedHeadTypes>
+		<displayOrderInCategory>8701</displayOrderInCategory>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<backgroundPathEndogenes>HaloRim/GeneIcons/EndogeneBG</backgroundPathEndogenes>
+				<backgroundPathXenogenes>HaloRim/GeneIcons/XenogeneBG</backgroundPathXenogenes>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+</Defs>
