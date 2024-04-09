@@ -15,9 +15,9 @@
 			<li>Hair_BaldOnly</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>HaloRim_JackalHead</li>
-			<li>Outland_Skin_DirtBrown</li>
-			<li>Outland_Skin_LightBrown</li>
-			<li>Outland_Skin_BrownWood</li>
+			<li>Outland_Skin_DeepBrown</li>
+			<li>Outland_Skin_PaleBrown</li>
+			<li>Outland_Skin_Brown</li>
 		</genes>
 	</XenotypeDef>
 
