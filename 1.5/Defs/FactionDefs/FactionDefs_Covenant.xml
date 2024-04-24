@@ -8,7 +8,7 @@
 		<pawnSingular>covenant</pawnSingular>
 		<pawnsPlural>covenant</pawnsPlural>
 		<categoryTag>Outlander</categoryTag>
-		<settlementGenerationWeight>0.3</settlementGenerationWeight>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
 		<earliestRaidDays>35</earliestRaidDays>
 		<canMakeRandomly>true</canMakeRandomly>
