@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingStyleDef>
-		<defName>HaloRim_PlasmaRifle_Swords</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/SoS_PlasmaRifle</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
-	<ThingStyleDef>
-		<defName>HaloRim_PlasmaRifle_Heretic</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/Heretic_PlasmaRifle</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
 	<ThingDef ParentName="BaseMakeableGun" Name="CovenantPlasmaRifle">
 		<defName>HaloRim_PlasmaRifle_Covenant</defName>
 		<label>Plasma Rifle</label>
 		<description>The Type-25 Directed Energy Rifle, more commonly known as the Plasma Rifle, is a Covenant infantry weapon.</description>
 		<graphicData>
-			<texPath>HaloRim/Weapon/Cov_PlasmaRifle</texPath>
+			<texPath>HaloRim/Weapon/PlasmaRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>

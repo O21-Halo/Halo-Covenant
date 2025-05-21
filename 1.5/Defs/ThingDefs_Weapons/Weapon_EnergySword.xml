@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingStyleDef>
-		<defName>HaloRim_EnergySword_Swords</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/SoS_EnergySword</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
-	<ThingStyleDef>
-		<defName>HaloRim_EnergySword_Heretic</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/Heretic_EnergySword</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
 	<ThingDef ParentName="BaseMeleeWeapon" Name="CovenantEnergySword">
 		<defName>HaloRim_EnergySword_Covenant</defName>
 		<label>Energy Sword</label>
 		<description>The Type-1 Energy Weapon/Sword, commonly known as the Energy Sword, is a close-quarters weapon of the Covenant Empire, for exclusive use of the Sangheili.</description>
 		<graphicData>
-			<texPath>HaloRim/Weapon/Cov_EnergySword</texPath>
+			<texPath>HaloRim/Weapon/EnergySword</texPath>
 			<shaderType>Transparent</shaderType>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>

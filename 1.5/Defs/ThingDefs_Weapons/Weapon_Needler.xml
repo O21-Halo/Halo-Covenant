@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<ThingStyleDef>
-		<defName>HaloRim_Needler_Swords</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/SoS_Needler</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
-	<ThingStyleDef>
-		<defName>HaloRim_Needler_Heretic</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/Heretic_Needler</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
 	<ThingDef ParentName="BaseMakeableGun" Name="CovenantNeedler">
 		<defName>HaloRim_Needler_Covenant</defName>
 		<label>Needler</label>
 		<description>The Type-33 Guided Munitions Launcher, more commonly known as the Needler, is a Covenant anti-infantry weapon. It is used by Sangheili, Unggoy, Skirmishers, Yanme'e, and Kig-Yar.</description>
 		<graphicData>
-			<texPath>HaloRim/Weapon/Cov_Needler</texPath>
+			<texPath>HaloRim/Weapon/Needler</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>
@@ -110,7 +94,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>HaloRim_Damage_Needler</damageDef>
-			<damageAmountBase>3</damageAmountBase>
+			<damageAmountBase>6</damageAmountBase>
 			<armorPenetrationBase>0.4</armorPenetrationBase>
 			<stoppingPower>0.3</stoppingPower>
 			<speed>20</speed>

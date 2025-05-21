@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingStyleDef>
-		<defName>HaloRim_FuelRodCannon_Swords</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/SoS_FuelRodCannon</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
-	<ThingStyleDef>
-		<defName>HaloRim_FuelRodCannon_Heretic</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/Heretic_FuelRodCannon</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
 	<ThingDef ParentName="BaseMakeableGun" Name="CovenantFuelRodCannon">
 		<defName>HaloRim_FuelRodCannon_Covenant</defName>
 		<label>Fuel Rod Cannon</label>
 		<description>The Type-33 Light Anti-Armor Weapon, more commonly known as the Fuel Rod Gun or Fuel Rod Cannon, is a Covenant shoulder-fired mortar/radiation weapon.</description>
 		<graphicData>
-			<texPath>HaloRim/Weapon/Cov_FuelRodCannon</texPath>
+			<texPath>HaloRim/Weapon/FuelRodCannon</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>

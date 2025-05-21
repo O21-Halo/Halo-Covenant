@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingStyleDef>
-		<defName>HaloRim_PlasmaPistol_Swords</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/SoS_PlasmaPistol</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
-	<ThingStyleDef>
-		<defName>HaloRim_PlasmaPistol_Heretic</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/Heretic_PlasmaPistol</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
 	<ThingDef ParentName="BaseMakeableGun" Name="CovenantPlasmaPistol">
 		<defName>HaloRim_PlasmaPistol_Covenant</defName>
 		<label>Plasma Pistol</label>
 		<description>The Type-25 Directed Energy Pistol, also known as the Plasma Pistol, is a Covenant infantry firearm commonly wielded by the smaller Covenant member species, such as the Unggoy, Kig-Yar, and the Yanme'e.</description>
 		<graphicData>
-			<texPath>HaloRim/Weapon/Cov_PlasmaPistol</texPath>
+			<texPath>HaloRim/Weapon/PlasmaPistol</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Autopistol</soundInteract>

@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingStyleDef>
-		<defName>HaloRim_BeamRifle_Swords</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/SoS_BeamRifle</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
-	<ThingStyleDef>
-		<defName>HaloRim_BeamRifle_Heretic</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/Heretic_BeamRifle</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
 	<ThingDef ParentName="BaseMakeableGun" Name="CovenantBeamRifle">
 		<defName>HaloRim_BeamRifle_Covenant</defName>
 		<label>Beam Rifle</label>
 		<description>The Type-50 Sniper Rifle System, otherwise known as the Particle Beam Rifle, is a Covenant long-range weapon and the counterpart of the UNSC Sniper Rifle. They are most commonly seen being used by Kig-Yar, although Sangheili and even Jiralhanae are also seen using Beam Rifles on occasion.</description>
 		<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
 		<graphicData>
-			<texPath>HaloRim/Weapon/Cov_BeamRifle</texPath>
+			<texPath>HaloRim/Weapon/BeamRifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>

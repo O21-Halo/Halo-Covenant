@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
-	<ThingStyleDef>
-		<defName>HaloRim_BruteShot_Swords</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/SoS_BruteShot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
-
-	<ThingStyleDef>
-		<defName>HaloRim_BruteShot_Heretic</defName>
-		<graphicData>
-			<texPath>HaloRim/Weapon/Heretic_BruteShot</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-	</ThingStyleDef>
   
 	<ThingDef ParentName="BaseMakeableGun" Name="CovenantBruteShot">
 		<defName>HaloRim_BruteShot_Covenant</defName>
 		<label>Brute Shot</label>
 		<description>The Type-25 Grenade Launcher or Brute Shot is a Covenant weapon favored exclusively by the Jiralhanae.</description>
 		<graphicData>
-			<texPath>HaloRim/Weapon/Cov_BruteShot</texPath>
+			<texPath>HaloRim/Weapon/BruteShot</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<soundInteract>Interact_Rifle</soundInteract>
