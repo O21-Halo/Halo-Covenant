@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <loadFolders>
-	<v1.5>
+	<v1.6>
 		<li>/</li>
-		<li>1.5</li>
-		<li IfModInactive="Neronix17.Halo.Humanity">1.5/Mods/NoHaloRimMods</li>
-		<li IfModActive="Ludeon.RimWorld.Biotech">1.5/Mods/Biotech</li>
-	</v1.5>
+		<li>1.6</li>
+		<li IfModInactive="Neronix17.Halo.Humanity">1.6/Mods/NoHaloRimMods</li>
+		<li IfModActive="Ludeon.RimWorld.Biotech">1.6/Mods/Biotech</li>
+	</v1.6>
 </loadFolders>
