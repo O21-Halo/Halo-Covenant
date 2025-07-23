@@ -100,7 +100,7 @@
 			<speed>20</speed>
 		</projectile>
 		<comps>
-			<li Class="VFECore.CompProperties_HomingProjectile">
+			<li Class="VEF.Weapons.CompProperties_HomingProjectile">
 				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
 				<homingCorrectionTickRate>5</homingCorrectionTickRate>
 				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>

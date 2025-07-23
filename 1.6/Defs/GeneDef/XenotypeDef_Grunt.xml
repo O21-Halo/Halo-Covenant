@@ -23,14 +23,14 @@
 	<GeneDef ParentName="GeneJawBase">
 		<defName>HaloRim_GruntHead</defName>
 		<label>grunt head</label>
-		<description>TODO</description>
+		<description>Carriers of this gene have a small but incredibly dense skull with exposed bone plating on their face.</description>
 		<iconPath>HaloRim/GeneIcons/Gene_GruntHead</iconPath>
 		<forcedHeadTypes>
 			<li>HaloRim_GruntHead</li>
 		</forcedHeadTypes>
 		<displayOrderInCategory>8701</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>HaloRim/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>HaloRim/GeneIcons/XenogeneBG</backgroundPathXenogenes>
 			</li>

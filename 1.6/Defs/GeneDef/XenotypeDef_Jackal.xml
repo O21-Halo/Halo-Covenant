@@ -24,14 +24,14 @@
 	<GeneDef ParentName="GeneJawBase">
 		<defName>HaloRim_JackalHead</defName>
 		<label>jackal head</label>
-		<description>TODO</description>
+		<description>Carriers of this gene have a more dinosaur-like facial structure.</description>
 		<iconPath>HaloRim/GeneIcons/Gene_JackalHead</iconPath>
 		<forcedHeadTypes>
 			<li>HaloRim_JackalHead</li>
 		</forcedHeadTypes>
 		<displayOrderInCategory>8701</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>HaloRim/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>HaloRim/GeneIcons/XenogeneBG</backgroundPathXenogenes>
 			</li>

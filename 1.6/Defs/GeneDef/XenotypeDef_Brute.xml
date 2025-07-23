@@ -24,14 +24,14 @@
 	<GeneDef ParentName="GeneJawBase">
 		<defName>HaloRim_BruteHead</defName>
 		<label>brute head</label>
-		<description>TODO</description>
+		<description>Carriers of this gene have a gorilla like head, if a gorilla was particularly stupid and arrogant.</description>
 		<iconPath>HaloRim/GeneIcons/Gene_BruteHead</iconPath>
 		<forcedHeadTypes>
 			<li>HaloRim_BruteHead</li>
 		</forcedHeadTypes>
 		<displayOrderInCategory>8701</displayOrderInCategory>
 		<modExtensions>
-			<li Class="VanillaGenesExpanded.GeneExtension">
+			<li Class="VEF.Genes.GeneExtension">
 				<backgroundPathEndogenes>HaloRim/GeneIcons/EndogeneBG</backgroundPathEndogenes>
 				<backgroundPathXenogenes>HaloRim/GeneIcons/XenogeneBG</backgroundPathXenogenes>
 			</li>

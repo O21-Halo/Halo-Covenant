@@ -5,7 +5,7 @@
 		<defName>HaloRim_Carbine_Covenant</defName>
 		<label>Covenant Carbine</label>
 		<description>The Type-51 Carbine, also known as the Covenant Carbine, is a Covenant infantry firearm carried commonly by the Jiralhanae, Kig-Yar, and Sangheili.</description>
-		<thingClass>VanillaWeaponsExpandedLaser.LaserGun</thingClass>
+		<thingClass>VEF.Weapons.LaserGun</thingClass>
 		<graphicData>
 			<texPath>HaloRim/Weapon/Carbine</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -82,7 +82,7 @@
 		</tools>
 	</ThingDef>
 
-	<ThingDef Class="VanillaWeaponsExpandedLaser.LaserBeamDef" ParentName="HaloRimLaserBeamBase">
+	<ThingDef Class="VEF.Weapons.LaserBeamDef" ParentName="HaloRimLaserBeamBase">
 		<defName>HaloRim_Bullet_CovenantCarbine</defName>
 		<label>carbine beam</label>
 		<graphicData>
